@@ -28,50 +28,41 @@
             background-color: #6996D3;
             color: aliceblue;
         }
-        .main_nav {
-    display: flex;
-    justify-content: start;
-    gap: 15px;
-    background-color: #284C7E;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .algortms_nav {
+    display: flex;              /* Используем flexbox для выстраивания элементов */
+    flex-direction: column;     /* Устанавливаем вертикальное направление */
+    background-color: #f4f4f4;  /* Цвет фона навигации */
+    padding: 10px;              /* Внутренние отступы */
+    border: 1px solid #ccc;     /* Рамка вокруг навигации */
+    border-radius: 5px;         /* Скругление углов */
+    width: 200px;               /* Ширина навигации */
 }
 
- .main_a {
-    color: #e0f7fa;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.alg_a {
+    text-decoration: none;       /* Убираем подчеркивание у ссылок */
+    color: #333;                /* Цвет текста ссылок */
+    padding: 8px;               /* Внутренние отступы для ссылок */
+    margin: 5px 0;              /* Отступы между ссылками */
+    border-radius: 3px;         /* Скругление углов ссылок */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
 }
 
-.main_a:hover {
-    background-color: #00acc1;
-    color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 172, 193, 0.4);
-}
-
-.main_a:active {
-    transform: translateY(0);
-    box-shadow: none;
+.alg_a:hover {
+    background-color: #d0d0d0;  /* Цвет фона при наведении */
 }
         </style>
     </head>
     <body>
         <header>
-            <nav class="main_nav">
-                <a class="main_a" href="index.html">Hlavna Stranka</a>
-                <a class="main_a" href="Boeing747.html">Boeing 747</a>
-                <a class="main_a" href="Algoritm1.html">Algoritm 1</a>
-                <a class="main_a" href="Algoritm2.html">Algoritm 2</a>
-                <a class="main_a" href="Algoritm3.html">Algoritm 3</a>
-                <a class="main_a" href="Algoritm4.html">Algoritm 4</a>
-                <a class="main_a" href="Algoritm5.html">Algoritm 5</a>
+            <nav class="algortms_nav">
+                <a class="alg_a" href="Algoritm1.html">Algoritm 1</a>
+                <a class="alg_a" href="Algoritm2.html">Algoritm 2</a>
+                <a class="alg_a" href="Algoritm3.html">Algoritm 3</a>
+                <a class="alg_a" href="Algoritm4.html">Algoritm 4</a>
+                <a class="alg_a" href="Algoritm5.html">Algoritm 5</a>
+                <a class="alg_a" href="Algoritmy.html">Späť</a>
             </nav>
-        </header>
+        </header> 
 
         <div class="container">
         <h1>
